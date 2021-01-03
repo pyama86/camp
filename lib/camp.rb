@@ -10,9 +10,8 @@ module Camp
     raise "input parameter must be Date class" if day.class != Date
 
     %w(Montbell Hadomisaki).map do |s|
-      sites = Object.const_get("Camp::#{s}").sites
-      sites.map do |site|
-        site.name if site.possible_days.find {|pd| pd == day}
+      Object.const_get("Camp::#{s}").sites.map do |site|
+        site.name if site.can_reserve?(day)
       end.compact
     end.compact.flatten
   end

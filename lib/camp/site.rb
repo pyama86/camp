@@ -6,8 +6,8 @@ module Camp
       @possible_days = possible_days
     end
 
-    def can_researve?(day)
-      possible_days.find? {|d| d == day}
+    def can_reserve?(day)
+      possible_days.find {|d| d == day}
     end
   end
 end
