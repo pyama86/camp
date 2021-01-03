@@ -2,8 +2,8 @@
 
 各地のキャンプ上の空き状況を取得するライブラリです。下記のように利用してください。
 
-```
-require 'camp'
+```ruby
+require 'pyama-camp'
 
 Camp.can_reserve_sites(Date.parse("2021/1/16"))
 # ["Montbell B Site", "Montbell C Site", "Hadomisaki"]
