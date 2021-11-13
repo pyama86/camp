@@ -1,6 +1,7 @@
 require 'camp/montbell/base'
 require 'camp/montbell/b_site'
 require 'camp/montbell/c_site'
+require 'camp/montbell/wall_site'
 
 module Camp
   module Montbell
